@@ -1,21 +1,113 @@
-# My 90s Tech Journal
+# kkosu: git log --oneline
 
 This repository contains the code for "My 90s Tech Journal" website.
 
-## How to Publish a New Article
+## Example Article Structure
 
-To add a new article to the website, follow these steps:
+To add a new article, create a new HTML file in the `/articles` directory. The file should follow this structure to ensure it is styled correctly and that the navigation links work properly.
 
-1.  **Create the Article HTML File**:
-    *   Create a new HTML file for your article inside the `articles/` directory (e.g., `articles/my-new-article.html`).
-    *   **Template Suggestion**: It's recommended to use an existing article file (e.g., `articles/article-1.html`) as a template to ensure consistent structure, especially for the header and metadata.
+Here is the full code for a sample article:
 
-2.  **Add Article Entry to `index.html`**:
+```html
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Understanding TCP/IP</title>
+	<link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+	<div class="container">
+		<header>
+			<nav>
+				<a href="../index.html">Articles</a>
+				<a href="../about.html">About</a>
+				<a href="../contact.html">Contact</a>
+			</nav>
+		</header>
+		<h1>Understanding TCP/IP</h1>
+		<div class="metadata">
+			<span class="date">July 8, 2025</span>
+			<span class="read-time">5 min read</span>
+			<span class="tags"><span class="tag-item">networking</span> <span class="tag-item">tcpip</span></span>
+		</div>
+		<p>This is a placeholder for the article content. Replace this with your actual article.</p>
+		<a href="../index.html">Back to main</a>
+	</div>
+</body>
+
+<script>
+    document.querySelectorAll('.tag-item').forEach(tagItem => {
+        tagItem.addEventListener('click', function() {
+            const tag = this.textContent.trim();
+            window.location.href = `../index.html?tag=${tag}`;
+        });
+    });
+</script>
+
+</html>
+```
+
+## Example Article Page Structure
+
+To create a new article page, create a new HTML file in the `/articles` directory. The file should follow this structure to ensure it is styled correctly and that the navigation links work properly.
+
+Here is the full code for a sample article page:
+
+```html
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Understanding TCP/IP</title>
+	<link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+	<div class="container">
+		<header>
+			<nav>
+				<a href="../index.html">Articles</a>
+				<a href="../about.html">About</a>
+				<a href="../contact.html">Contact</a>
+			</nav>
+		</header>
+		<h1>Understanding TCP/IP</h1>
+		<div class="metadata">
+			<span class="date">July 8, 2025</span>
+			<span class="read-time">5 min read</span>
+			<span class="tags"><span class="tag-item">networking</span> <span class="tag-item">tcpip</span></span>
+		</div>
+		<p>This is a placeholder for the article content. Replace this with your actual article.</p>
+		<a href="../index.html">Back to main</a>
+	</div>
+</body>
+
+<script>
+    document.querySelectorAll('.tag-item').forEach(tagItem => {
+        tagItem.addEventListener('click', function() {
+            const tag = this.textContent.trim();
+            window.location.href = `../index.html?tag=${tag}`;
+        });
+    });
+</script>
+
+</html>
+```
+
+## How to Add a New Article to the Main Page
+
+To make a new article appear on the main page (`index.html`) and be searchable/filterable:
+
+1.  **Create the Article HTML File**: Follow the "Example Article Page Structure" above to create your article's HTML file (e.g., `articles/my-new-article.html`).
+2.  **Add Entry to `index.html`**:
     *   Open `index.html`.
-    *   Locate the `<ul id="articleList">` section within the `<main class="main-content">`.
-    *   Add a new `<li>` element for your article, following the existing structure.
+    *   Locate the `<ul id="articleList">` section.
+    *   Add a new `<li>` element for your article, following this structure:
 
-    Example `<li>` entry:
     ```html
     <li data-tags="your-tag-1,your-tag-2">
         <a href="articles/your-article-file.html">Your Article Title Here</a>
@@ -26,7 +118,7 @@ To add a new article to the website, follow these steps:
         </div>
     </li>
     ```
-    *   **`data-tags` Attribute**: This is crucial for search and tag filtering. Add a `data-tags` attribute to the `<li>` element. Its value should be a comma-separated list of relevant tags (e.g., `data-tags="programming,javascript,webdev"`). These tags will automatically appear in the sidebar and be searchable.
+    *   **`data-tags` Attribute**: This is crucial for search and tag filtering. Add a `data-tags` attribute to the `<li>` element. Its value should be a comma-separated list of relevant tags (e.g., `data-tags="programming,javascript,webdev"`).
     *   **Article Link**: Ensure the `href` in the `<a>` tag points to your new article's HTML file (e.g., `articles/my-new-article.html`).
     *   **Metadata**: Update the `date`, `read-time`, and `#tags` within the `<div class="metadata">` to reflect your article's details.
 
