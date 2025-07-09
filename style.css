@@ -1,0 +1,145 @@
+body {
+  background-color: #282C34;
+  color: #ABB2BF;
+  font-family: "Menlo", "Consolas", "Courier New", monospace;
+  padding: 20px;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+header {
+    border-bottom: 1px solid #4B5263;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+
+.bio a[aria-label="LinkedIn Profile"] svg {
+  width: 24px;
+  height: 24px;
+  margin-top: 12px;
+  display: block;
+}
+
+
+.title {
+    text-align: center;
+    display: block;
+    width: 100%;
+}
+
+nav a {
+    color: #61AFEF;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+nav a:hover, nav a.active {
+    color: #C678DD;
+    text-decoration: none;
+}
+
+.bio, .contact-info {
+  margin-bottom: 40px;
+  text-align: left;
+}
+
+input[type="text"] {
+  background-color: #323842;
+  color: #ABB2BF;
+  border: 1px solid #4B5263;
+  padding: 5px;
+  width: 300px;
+  margin-bottom: 20px;
+  display: block;
+  margin-left: 0;
+  margin-right: auto;
+  text-align: left;
+}
+
+a {
+  color: #61AFEF;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+#articleList {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+}
+
+#articleList li {
+    margin-bottom: 20px;
+}
+
+.metadata {
+  font-size: 0.8em;
+  color: #98C379;
+}
+
+.read-time {
+  margin-right: 10px;
+}
+
+.date {
+  margin-right: 10px;
+}
+
+.content-wrapper {
+    display: flex;
+    gap: 20px;
+}
+
+.sidebar {
+    flex: 0 0 200px; /* Fixed width for sidebar */
+    padding-right: 20px;
+    border-right: 1px solid #4B5263;
+}
+
+.main-content {
+    flex-grow: 1;
+}
+
+#tagList {
+    margin-top: 10px;
+}
+
+.tag {
+    display: inline-block;
+    background-color: #4B5263;
+    color: #ABB2BF;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+
+.tag:hover {
+    background-color: #61AFEF;
+    color: #282C34;
+}
+
+.tag.selected {
+    background-color: #C678DD;
+    color: #282C34;
+}
+
+.tag-item {
+    background-color: #4B5263;
+    color: #ABB2BF;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-size: 0.9em;
+    margin-right: 5px;
+    display: inline-block;
+    cursor: pointer;
+}

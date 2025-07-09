@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>My 90s Tech Journal</title>
+	<link rel="stylesheet" href="style.css">
+	<script defer src="search.js"></script>
+</head>
+
+<body>
+	<div class="container">
+		<header>
+			<nav>
+				<a href="index.html" class="active">Articles</a>
+				<a href="about.html">About</a>
+				<a href="contact.html">Contact</a>
+			</nav>
+		</header>
+
+		<div class="content-wrapper">
+			<aside class="sidebar">
+				<h2>Tags</h2>
+				<div id="tagList">
+					<!-- Tags will be loaded here by JavaScript -->
+				</div>
+			</aside>
+
+			<main class="main-content">
+				<h1>Welcome to My 90s Tech Journal</h1>
+
+				<input type="text" id="searchBox" placeholder="Search articles...">
+
+				<ul id="articleList">
+					<li data-tags="networking,tcpip">
+						<a href="articles/article-1.html">Understanding TCP/IP</a>
+						<div class="metadata">
+							<span class="date">July 8, 2025</span>
+							<span class="read-time">5 min read</span>
+							<span class="tags">#networking #tcpip</span>
+						</div>
+					</li>
+					<li data-tags="hardware,retro">
+						<a href="articles/article-2.html">Building a PC in 1999</a>
+						<div class="metadata">
+							<span class="date">July 8, 2025</span>
+							<span class="read-time">10 min read</span>
+							<span class="tags">#hardware #retro</span>
+						</div>
+					</li>
+					<li data-tags="webdev,html">
+						<a href="articles/article-3.html">Intro to HTML 3.2</a>
+						<div class="metadata">
+							<span class="date">July 8, 2025</span>
+							<span class="read-time">3 min read</span>
+							<span class="tags">#webdev #html</span>
+						</div>
+					</li>
+				</ul>
+			</main>
+		</div>
+	</div>
+</body>
+
+</html>
