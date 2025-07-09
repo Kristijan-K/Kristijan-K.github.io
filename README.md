@@ -1,54 +1,6 @@
 # kkosu: git log --oneline
 
-This repository contains the code for "My 90s Tech Journal" website.
 
-## Example Article Structure
-
-To add a new article, create a new HTML file in the `/articles` directory. The file should follow this structure to ensure it is styled correctly and that the navigation links work properly.
-
-Here is the full code for a sample article:
-
-```html
-<!DOCTYPE html>
-<html>
-
-<head>
-	<meta charset="UTF-8">
-	<title>Understanding TCP/IP</title>
-	<link rel="stylesheet" href="../style.css">
-</head>
-
-<body>
-	<div class="container">
-		<header>
-			<nav>
-				<a href="../index.html">Articles</a>
-				<a href="../about.html">About</a>
-				<a href="../contact.html">Contact</a>
-			</nav>
-		</header>
-		<h1>Understanding TCP/IP</h1>
-		<div class="metadata">
-			<span class="date">July 8, 2025</span>
-			<span class="read-time">5 min read</span>
-			<span class="tags"><span class="tag-item">networking</span> <span class="tag-item">tcpip</span></span>
-		</div>
-		<p>This is a placeholder for the article content. Replace this with your actual article.</p>
-		<a href="../index.html">Back to main</a>
-	</div>
-</body>
-
-<script>
-    document.querySelectorAll('.tag-item').forEach(tagItem => {
-        tagItem.addEventListener('click', function() {
-            const tag = this.textContent.trim();
-            window.location.href = `../index.html?tag=${tag}`;
-        });
-    });
-</script>
-
-</html>
-```
 
 ## Example Article Page Structure
 
