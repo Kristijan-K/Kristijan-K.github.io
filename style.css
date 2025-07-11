@@ -197,3 +197,40 @@ a:hover {
     color: #C678DD;
     font-weight: bold;
 }
+
+@media screen and (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  .container {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+
+  header {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+  }
+
+  nav a {
+    margin: 0 8px;
+    font-size: 0.9em;
+  }
+
+  .content-wrapper {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    flex: none;
+    width: 100%;
+    padding-right: 0;
+    border-right: none;
+    margin-bottom: 20px;
+  }
+
+  input[type="text"] {
+    width: 100%;
+  }
+}
