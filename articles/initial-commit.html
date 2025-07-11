@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Initial Commit</title>
+	<link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="article-page">
+	<div class="container">
+		<header>
+			<nav>
+				<a href="../index.html" target="_blank" rel="noopener noreferrer">Articles</a>
+				<a href="../about.html" target="_blank" rel="noopener noreferrer">About</a>
+				<a href="../contact.html" target="_blank" rel="noopener noreferrer">Contact</a>
+			</nav>
+		</header>
+		<h1>Initial Commit</h1>
+		<div class="metadata">
+			<span class="date">July 11 2025</span>, <span class="read-time">1 min read</span>, <span
+				class="tags"><span class="tag-item">AI</span> <span class="tag-item">Tech</span></span>
+		</div>
+		<p>This is my personal website, where I will (probably very infrequently) publish articles and
+			reflections on various tech topics.</p>
+		<p>Most articles today are AI-written and include too
+			many empty words to increase the read time. The issue is actually not the length, but the
+			content.
+			It is
+			just painful to read most of them, and I end up skipping to the end trying to find the punchline
+			or conclusions.
+		</p>
+		<p><span>One of my favourite tech articles of all time is </span><a href="https://grugbrain.dev/"
+				target="_blank" rel="noopener noreferrer">Grug Brained
+				Developer</a><span>. It is
+				not short, but all the ideas are presented in a funny way, with as few words as
+				possible. </span></p>
+		<p>I may
+			not succeed, but this will be my modus operandi: short reflections on topics that
+			interest me,
+			without AI-generated fluff or nonsense.</p>
+
+	</div>
+</body>
+
+<script>
+	document.querySelectorAll('.tag-item').forEach(tagItem => {
+		tagItem.addEventListener('click', function () {
+			const tag = this.textContent.trim();
+			window.location.href = `../index.html?tag=${tag}`;
+		});
+	});
+</script>
+
+</html>

@@ -70,6 +70,10 @@ a:hover {
   text-decoration: underline;
 }
 
+#articleList li a:hover {
+  text-decoration: none;
+}
+
 #articleList {
     list-style-type: none;
     padding: 0;
@@ -77,20 +81,29 @@ a:hover {
 }
 
 #articleList li {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 5px;
+    transition: background-color 0.2s ease-in-out;
 }
 
-.metadata {
+#articleList li:hover {
+    background-color: #323842;
+}
+
+.meta {
   font-size: 0.8em;
   color: #98C379;
-}
-
-.read-time {
   margin-right: 10px;
 }
 
 .date {
-  margin-right: 10px;
+  color: #C678DD;
+}
+
+.read-time {
+    color: #98C379;
 }
 
 .content-wrapper {
@@ -147,4 +160,40 @@ a:hover {
 .bio a {
     display: inline-block;
     margin-right: 10px;
+}
+
+.article-page h1 {
+    font-weight: bold;
+}
+
+.date-year {
+    font-weight: normal;
+    margin-top: 10px;
+    color: #ABB2BF;
+    cursor: pointer;
+}
+
+.date-year:hover {
+    color: #61AFEF;
+}
+
+.date-year.selected {
+    color: #C678DD;
+    font-weight: bold;
+}
+
+.date-month {
+    margin-left: 15px;
+    cursor: pointer;
+    display: block;
+    padding: 3px 0;
+}
+
+.date-month:hover {
+    color: #61AFEF;
+}
+
+.date-month.selected {
+    color: #C678DD;
+    font-weight: bold;
 }
