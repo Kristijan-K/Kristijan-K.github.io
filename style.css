@@ -262,8 +262,12 @@ a:hover {
   }
 
   nav a {
-    margin: 0 8px;
-    font-size: 0.9em;
+    margin: 0 10px;
+    font-size: 1.1em;
+  }
+
+  .metadata {
+    display: none;
   }
 
   .content-wrapper {
@@ -271,11 +275,7 @@ a:hover {
   }
 
   .sidebar {
-    flex: none;
-    width: 100%;
-    padding-right: 0;
-    border-right: none;
-    margin-bottom: 20px;
+    display: none;
   }
 
   input[type="text"] {
