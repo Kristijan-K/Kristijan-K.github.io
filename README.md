@@ -1,5 +1,4 @@
-# kkosu: git log --oneline
-
+# kkosu: git log
 Non AI generated reflections on various tech related topics. 
 
 ## Example Article Page Structure
