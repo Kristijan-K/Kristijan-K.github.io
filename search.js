@@ -31,8 +31,8 @@ document.addEventListener('DOMContentLoaded', () => {
         articles.forEach(article => {
             const articleTitle = article.querySelector('a').textContent.toLowerCase();
             const articleTags = article.dataset.tags ? article.dataset.tags.toLowerCase().split(',') : [];
-            const articleDate = article.querySelector('.date').textContent.trim();
-            const [articleMonth, articleDay, articleYear] = articleDate.replace(',', '').split(' ');
+            const articleDate = article.querySelector('.date').textContent.trim().replace(/[\n\t]+/g, ' ').replace(/\s+/g, ' ');
+            const [articleMonth, articleDay, articleYear] = articleDate.replace(',', '').split(/\s+/);
 
             const matchesSearch = articleTitle.includes(searchTerm) ||
                                   articleTags.some(tag => tag.includes(searchTerm));
@@ -93,7 +93,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         filteredArticles.forEach(article => {
-            const dateText = article.querySelector('.date').textContent.trim();
+            const dateText = article.querySelector('.date').textContent.trim().replace(/[\n\t]+/g, ' ').replace(/\s+/g, ' ');
             const [month, day, year] = dateText.replace(',', '').split(' ');
             
             if (!dates[year]) {

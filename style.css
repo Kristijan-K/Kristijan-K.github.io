@@ -1,8 +1,41 @@
 body {
   background-color: #282C34;
-  color: #ABB2BF;
+  color: #E0E0E0; /* Whiter text */
   font-family: "Menlo", "Consolas", "Courier New", monospace;
   padding: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Menlo", "Consolas", "Courier New", monospace; /* Keep consistent font */
+  margin-top: 1.5em;
+  margin-bottom: 0.8em;
+  line-height: 1.2;
+}
+
+h1 {
+  color: #ABB2BF; /* Gray */
+  font-size: 2.2em;
+  font-weight: bold;
+}
+
+h2 {
+  color: #ABB2BF; /* Gray */
+  font-size: 1.8em;
+}
+
+h3 {
+  color: #4A7C9B; /* Darker blue */
+  font-size: 1.4em;
+  line-height: 1.6em;
+}
+
+h4, h5, h6 {
+  color: #E0E0E0; /* Whiter text for smaller headings */
+  font-size: 1.1em;
+}
+
+p {
+  line-height: 1.6;
 }
 
 .container {
