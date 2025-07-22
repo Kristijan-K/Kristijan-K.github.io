@@ -6,7 +6,7 @@ body {
 }
 
 .container {
-  max-width: 960px;
+  max-width: 1100px;
   margin: 0 auto;
 }
 
@@ -53,7 +53,7 @@ input[type="text"] {
   color: #ABB2BF;
   border: 1px solid #4B5263;
   padding: 5px;
-  width: 300px;
+  width: 100%;
   margin-bottom: 20px;
   display: block;
   margin-left: 0;
@@ -92,10 +92,10 @@ a:hover {
     background-color: #323842;
 }
 
-.meta {
-  font-size: 0.8em;
-  color: #98C379;
-  margin-right: 10px;
+.article-meta {
+  margin-top: 5px; /* Small margin between rows */
+  font-size: 0.9em; /* Slightly reduced font size */
+  display: block; /* Ensure it takes its own line */
 }
 
 .date {
@@ -106,19 +106,34 @@ a:hover {
     color: #98C379;
 }
 
+.article-tags {
+    display: inline;
+}
+
+.article-tag {
+    display: inline-block;
+    background-color: #4B5263;
+    color: #ABB2BF;
+    padding: 2px 6px;
+    margin-left: 5px;
+    border-radius: 3px;
+    font-size: 0.9em;
+}
+
 .content-wrapper {
     display: flex;
+    justify-content: center; /* Center the combined sidebar and main content block */
     gap: 20px;
 }
 
 .sidebar {
-    flex: 0 0 200px; /* Fixed width for sidebar */
+    flex: 0 0 192px;
     padding-right: 20px;
-    border-right: 1px solid #4B5263;
+    margin-left: -100px; /* Pull the sidebar further to the left */
 }
 
 .main-content {
-    flex-grow: 1;
+    flex: 0 0 768px;
 }
 
 #tagList {
