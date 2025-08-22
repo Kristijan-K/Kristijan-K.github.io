@@ -282,3 +282,38 @@ a:hover {
     width: 100%;
   }
 }
+
+pre {
+  background-color: #21252B; /* Slightly darker than body */
+  color: #ABB2BF;
+  padding: 15px;
+  border-radius: 5px;
+  overflow-x: auto; /* For horizontal scrolling on small screens */
+  border: 1px solid #4B5263;
+  max-width: 80%;
+  margin: 20px auto;
+}
+
+.article-image {
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+}
+
+code {
+  font-family: "Menlo", "Consolas", "Courier New", monospace;
+  background-color: #323842;
+  padding: 2px 4px;
+  border-radius: 3px;
+  font-size: 0.9em;
+}
+
+pre code {
+  background-color: transparent;
+  padding: 0;
+  border-radius: 0;
+  font-size: inherit;
+  border: none;
+}

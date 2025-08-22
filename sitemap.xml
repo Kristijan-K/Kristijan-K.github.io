@@ -1,26 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://www.your-website.com/index.html</loc>
+    <loc>https://kristijan-k.github.io/index.html</loc>
     <lastmod>2025-07-11</lastmod>
   </url>
   <url>
-    <loc>https://www.your-website.com/about.html</loc>
+    <loc>https://kristijan-k.github.io/about.html</loc>
     <lastmod>2025-07-11</lastmod>
   </url>
   <url>
-    <loc>https://www.your-website.com/contact.html</loc>
+    <loc>https://kristijan-k.github.io/contact.html</loc>
     <lastmod>2025-07-11</lastmod>
   </url>
   <url>
-    <loc>https://www.your-website.com/articles/initial-commit.html</loc>
+    <loc>https://kristijan-k.github.io/articles/initial-commit.html</loc>
     <lastmod>2025-07-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.your-website.com/articles/personalized-apps-and-tools-enabled-by-ai.html</loc>
+    <loc>https://kristijan-k.github.io/articles/personalized-apps-and-tools-enabled-by-ai.html</loc>
     <lastmod>2025-07-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kristijan-k.github.io/articles/salesforce-clean-code-performance.html</loc>
+    <lastmod>2025-08-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
